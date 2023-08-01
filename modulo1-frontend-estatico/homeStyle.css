@@ -6,6 +6,7 @@
 
 #header {
   height: 20vh;
+  background-color: rgb(234, 234, 234);
 }
 
 #nav-header a {
@@ -19,5 +20,5 @@
 
 #footer {
   height: 15vh;
-  border-top: 2px solid rgb(218, 210, 210);
+  background-color: rgb(234, 234, 234);
 }
