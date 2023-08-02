@@ -7,8 +7,9 @@
 #header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 60px 42px;
-  padding: 24px 60px 0 60px;
+  grid-template-rows: 10vh 5vh;
+  align-items: center;
+  padding: 24px 54px 0 54px;
   height: 20vh;
   background-color: rgb(246, 245, 245);
 }
@@ -16,7 +17,7 @@
 #form-header {
   justify-self: end;
   display: flex;
-  width: 240px;
+  width: 40vw;
   align-items: center;
   padding: 0px 8px;
 }
@@ -55,7 +56,7 @@
 }
 
 #footer {
-  padding: 24px 60px;
+  padding: 24px 54px;
   height: 15vh;
   background-color: rgb(234, 234, 234);
   text-align: center;
