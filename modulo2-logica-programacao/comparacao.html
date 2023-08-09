@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comparação</title>
+
+    <style>
+      input,
+      select {
+        width: 40px;
+        text-align: center;
+        height: 25px;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
     <h1>Comparação</h1>
@@ -22,7 +32,7 @@
 
     <input type="number" placeholder="0" id="y" />
 
-    <button>=</button>
+    <button onclick="comparar()">=</button>
 
     <input type="text" disabled id="result" />
 
