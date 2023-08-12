@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cálculo do IMC</title>
+  </head>
+  <body>
+    <h1>CÁLCULO DO IMC</h1>
+    <h2>Autora: Analice Marques</h2>
+    <hr />
+
+    <label for="peso">Peso</label>
+    <input type="number" id="peso" style="margin-bottom: 16px" autofocus />
+
+    <br />
+
+    <label for="altura">Altura</label>
+    <input type="number" id="altura" style="margin-bottom: 16px" />
+
+    <br />
+
+    <button onclick="calcularImc()">Calcular</button>
+
+    <hr />
+
+    <label for="imc">IMC</label>
+    <input type="number" id="imc" />
+    <p id="result"></p>
+
+    <p id="classificacao"></p>
+
+    <script src="imc.js"></script>
+  </body>
+</html>
