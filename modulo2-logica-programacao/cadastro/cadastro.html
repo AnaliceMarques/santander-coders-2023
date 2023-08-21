@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+      }
+
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cadastro Final</h1>
+    <hr />
+    <form>
+      <label for="codigo"
+        >Código
+        <input
+          type="text"
+          id="codigo"
+          name="codigo"
+          placeholder="XXX0000"
+          autofocus
+        />
+      </label>
+
+      <label for="produto"
+        >Produto
+        <input
+          type="text"
+          id="produto"
+          name="produto"
+          placeholder="Nome do produto"
+        />
+      </label>
+
+      <label for="quantidade"
+        >Quantidade
+        <input
+          type="number"
+          id="quantidade"
+          name="quantidade"
+          placeholder="000"
+        />
+      </label>
+      <label for="preco"
+        >Preço Unit.
+        <input type="number" id="preco" name="preco" placeholder="0.00" />
+      </label>
+
+      <!-- <button onclick="cadastrar()">Cadastrar</button> -->
+      <input type="reset" value="Cadastrar" onclick="cadastrar()" />
+    </form>
+
+    <hr />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Preço Unitário</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="cadastro.js"></script>
+  </body>
+</html>
